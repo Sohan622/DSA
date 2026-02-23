@@ -8,7 +8,11 @@ bool isSorted(int arr[], int n) {
     return true;  
 }
 
-int main() {
-    int arr[] = {1, 2, 3, 4, 5}, n = 5;
-    printf("%s", isSorted(arr, n) ? "True" : "False");  
+int main() {int n;
+    cout<<"Enter the number of elements: ";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the elements: ";
+    for(int i=0;i<n;i++)cin>>arr[i];
+    printf("%s", isSorted(arr, n) ? "Sorted" : "Not Sorted");  
 }
